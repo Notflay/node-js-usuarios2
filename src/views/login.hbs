@@ -1,0 +1,33 @@
+{{#if compare}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 offset-md-3">
+                <div class="card card-body bg-white p-4 text-black rounded-0 m-4">
+                    <h1>Update a character</h1>
+                    {{> html/updatecharc}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{else}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 offset-md-3">
+                <div class="card card-body bg-white p-4 text-black rounded-0 m-4">
+                    <h1>Login for update</h1>
+                    <form id="form-login">
+                        <div>
+                            <label>Name: </label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div>
+                            <label>Password: </label>
+                            <input type="password" class="form-control" name="pass">
+                        </div>
+                        <button type="submit" class="btn-primary m-2 text-white">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}

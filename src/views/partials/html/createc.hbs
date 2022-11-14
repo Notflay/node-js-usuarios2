@@ -1,0 +1,49 @@
+<form action="/image" method="POST" enctype="multipart/form-data">
+    <div class="card card-body p-3 m-5 shadow-lg p-3 mb-5 rounded">
+        <div class="mb-3">
+            <label for="inputname" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" />
+        </div>
+        <div class="mb-3">
+            <label for="inputlastname" class="form-label">Lastname</label>
+            <input type="text" name="lastname" class="form-control" id="inputlastname" />
+        </div>
+        <div class="mb-3">
+            <label for="inputage" class="form-label">Age</label>
+            <input type="number" name="age" class="form-control" id="inputage" />
+        </div>
+        <div class="mb-3" id="label-file">
+            <label class="form-label" for="formFileMultiple">Select picture <br /> <img
+                    src="/images/hands-click-png-icon-5.png" width="35px"></label>
+            <input type="file" name="image" class="form-control" id="formFileMultiple" />
+        </div>
+        <div class="mb-3">
+            <label for="inpudescription" class="form-label">Description</label>
+            <input type="text" name="description" class="form-control" id="inpudescription" />
+        </div>
+        <div class="form-check container ">
+            <label>Rol</label>
+            <br />
+            <input type="radio" name="rol" value="Warrior" class="form-check-input" />Warrior</input>
+            <br />
+            <input type="radio" name="rol" value="Paladin" class="form-check-input" />Paladin </input>
+            <br />
+            <input type="radio" name="rol" value="Healer" class="form-check-input" />Healer
+            <br />
+            <input type="radio" name="rol" value="Archer" class="form-check-input" />Archer
+            <br />
+            <input type="radio" name="rol" value="Witch" class="form-check-input" />Witch
+            <br />
+            <input type="radio" name="rol" value="Wizard" class="form-check-input" />Wizard
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class=" col-form-label ">Password</label>
+            <input type="password" name="password" class="form-control" id="inputPassword" />
+        </div>
+        <div class="mb-3">
+            <button type="submit" id="create-character" class="btn btn-primary">
+                Create
+            </button>
+        </div>
+    </div>
+</form>

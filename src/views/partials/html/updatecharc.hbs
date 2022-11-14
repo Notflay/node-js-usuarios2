@@ -1,0 +1,48 @@
+<form id="form-patch" action="/editcharacter/{{character._id}}" method="POST" enctype="multipart/form-data">
+    <input type="hidden" id="acticuloId" name="articuloId" value="{{character._id}}" />
+    <div class="mb-3">
+        <label for="inputname" class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" value={{character.name}} />
+    </div>
+    <div class="mb-3">
+        <label for="inputlastname" class="form-label">Lastname</label>
+        <input type="text" name="lastname" class="form-control" id="inputlastname" value={{character.lastname}} />
+    </div>
+    <div class="mb-3">
+        <label for="inputage" class="form-label">Age</label>
+        <input type="number" name="age" class="form-control" id="inputage" />
+    </div>
+    <div class="mb-3" id="label-file">
+        <label class="form-label" for="formFileMultiple">Select picture</label>
+        <input type="file" name="image" class="form-control" id="formFileMultiple" />
+    </div>
+    <div class="mb-3">
+        <label for="inpudescription" class="form-label">Description</label>
+        <input type="text" name="description" class="form-control" id="inpudescription" />
+    </div>
+    <div class="form-check">
+        <label>Rol</label>
+        <br />
+        <input type="radio" name="rol" value="Warrior" class="form-check-input" />Warrior</input>
+        <br />
+        <input type="radio" name="rol" value="Paladin" class="form-check-input" />Paladin </input>
+        <br />
+        <input type="radio" name="rol" value="Healer" class="form-check-input" />Healer
+        <br />
+        <input type="radio" name="rol" value="Archer" class="form-check-input" />Archer
+        <br />
+        <input type="radio" name="rol" value="Witch" class="form-check-input" />Witch
+        <br />
+        <input type="radio" name="rol" value="Wizard" class="form-check-input" />Wizard
+    </div>
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label ">Pass</label>
+        <input type="password" name="pass" class="form-control" id="inputPassword" />
+    </div>
+    <div class="mb-3">
+        <button type="submit" id="create-character" class="btn btn-primary">
+            Create
+        </button>
+
+    </div>
+</form>

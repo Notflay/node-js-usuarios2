@@ -1,0 +1,39 @@
+{{#if character}}
+    <div class="container">
+        <div class="row justify-content-start">
+            {{#each character}}
+                <div class="col-6">
+                    <div class="card-mb-3" style="max-width: 540px;">
+                        <div class="row g-0 m-5  shadow rounded position-relative" id='card-char'>
+                            <div class="col-md-4  bg-white card-body p-1">
+                                <img src="/images/{{picture}}" class="img-fluid float-start" width="250" height="600">
+                            </div>
+                            <div class="col-md-8 bg-white card-body">
+                                <div class="card-body p-1">
+                                    <h5 class="card-title">{{name}} {{lastname}}</h5>
+                                    <p class="card-text">{{description}}</p>
+                                    <p class="card-text"><small class="text-muted">{{rol}}</small></p>
+                                </div>
+                            </div>
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-group-item"><button class="btn btn-primary" id="btn-delete"><a
+                                            href="/validatedelete/{{_id}}">Delete</a></button>
+                                    <button class="btn btn-primary" id="btn-delete"><a
+                                            href="/validate/{{_id}}">Update</a></button>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            {{/each}}
+        </div>
+    </div>
+
+{{else}}
+    <div>
+        <p>No hay nada </p>
+    </div>
+{{/if}}
